@@ -25,6 +25,7 @@ h5,
 .h5,
 h6,
 .h6 {
+	@apply text-white;
 	font-weight: 600;
 	letter-spacing: 2px;
 }
