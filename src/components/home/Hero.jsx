@@ -3,28 +3,18 @@ import Image from "next/image"
 
 export const Hero = () => {
 	return (
-		<motion.article className="flex w-[60vw] flex-col text-white relative">
+		<motion.article className="w-[60vw] h-full relative">
 			{/* <section className="z-10">
-				<h1>
-					Drogi
-					<br />
-					Przybyszu,
-				</h1>
-				<h3 className="py-3">witaj na stronie</h3>
-				<h2>Domowego Kościoła</h2>
-				<p>w Wiedniu</p>
+				<h1>Hero</h1>
 			</section> */}
-			<section>
-				<motion.div
-					className="h-[60vh]"
-					initial={{ width: "0" }}
-					animate={{ width: "28vh" }}
-					transition={{ type: "spring", duration: 6 }}
-				>
-					<div className="border-black border-[1.4rem] relative z-10 h-full w-full" />
-				</motion.div>
+			<section
+				className="flex flex-col items-center h-[60vh] max-w-[22rem] border-black border-[1.4rem] z-10 mx-auto"
+				initial={{ width: "0" }}
+				animate={{ width: "100%" }}
+				transition={{ type: "spring", duration: 6 }}
+			>
 				<Image
-					className="z-20 w-full h-auto flex flex-col absolute top-1/4 left-1"
+					className="absolute z-20 w-96 h-auto top-1/3"
 					src="/images/marriage.png"
 					alt="image of a couple in love"
 					width={640}
