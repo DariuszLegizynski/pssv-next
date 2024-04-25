@@ -20,7 +20,7 @@ const Main = () => {
 					/>
 				</video>
 			</div>
-			<section className="p-2 grid grid-rows-[2rem_1fr_2rem] items-center justify-items-center overflow-hidden h-screen w-screen">
+			<section className="grid grid-rows-[2rem_1fr_2rem] items-center justify-items-center overflow-hidden h-screen w-screen">
 				<Header />
 				<div className="grid grid-cols-[2rem_1fr_2rem] items-center justify-items-center h-full w-full">
 					<Link

@@ -5,7 +5,7 @@ import Logo from "@/components/home/Logo"
 const Header = () => {
 	return (
 		<header className="grid grid-cols-1 w-full h-12 z-10 backdrop-blur-md">
-			<section className="max-w-[62rem] grid grid-cols-[1fr_1fr] h-12 items-center justify-items-between w-full px-4 mx-auto fadeInFromTop">
+			<section className="max-w-[62rem] grid grid-cols-[auto_auto] gap-x-32 items-center justify-self-center h-12 fadeInFromTop">
 				<Logo />
 				<Link
 					className={`text-white justify-self-end`}
