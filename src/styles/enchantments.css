@@ -6,19 +6,11 @@
 	background-position: center;
 }
 
-.stripe {
-	left: 25%;
-	width: 4rem;
-}
-
-/* Add this to start the animation when the component mounts */
-.stripe {
-	animation: moveStripe 0.5s forwards;
-}
-
-@keyframes moveStripe {
-	to {
-		left: 50%;
-	}
+.bg-smoke-image {
+	background-image: url(/images/smoke/freepik_smoke.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
 }
 
