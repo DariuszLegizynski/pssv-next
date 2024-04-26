@@ -8,7 +8,7 @@ export const Hero = () => {
 				<h1>Hero</h1>
 			</section> */}
 			<motion.div
-				className="grid-row-1 grid-col-1 h-[56vh] max-w-[60%] border-black border-[1.8rem] z-10"
+				className="grid-row-1 grid-col-1 h-[55.6vh] max-w-[60%] border-black border-[1.8rem] z-10"
 				initial={{ width: 0 }}
 				animate={{ width: "100%" }}
 				transition={{ type: "spring", duration: 6 }}
