@@ -3,35 +3,31 @@ import Image from "next/image"
 
 export const Hero = () => {
 	return (
-		<motion.article className="flex w-[60vw] flex-col text-white relative">
+		<article className="w-[60vw] h-[60vh] grid grid-cols-1 grid-rows-1 justify-items-center md:justify-items-end">
 			{/* <section className="z-10">
-				<h1>
-					Drogi
-					<br />
-					Przybyszu,
-				</h1>
-				<h3 className="py-3">witaj na stronie</h3>
-				<h2>Domowego Kościoła</h2>
-				<p>w Wiedniu</p>
+				<h1>Hero</h1>
 			</section> */}
-			<section>
-				<motion.div
-					className="h-[60vh]"
-					initial={{ width: "0" }}
-					animate={{ width: "28vh" }}
-					transition={{ type: "spring", duration: 6 }}
-				>
-					<div className="border-black border-[1.4rem] relative z-10 h-full w-full" />
-				</motion.div>
-				<Image
-					className="z-20 w-full h-auto flex flex-col absolute top-1/4 left-1"
-					src="/images/marriage.png"
-					alt="image of a couple in love"
-					width={640}
-					height={480}
-				/>
-			</section>
-		</motion.article>
+			<motion.div
+				className="grid-row-1 grid-col-1 h-[55.6vh] max-w-[140px] md:max-w-[60%] border-black border-[1.8rem] z-10"
+				initial={{ width: 0 }}
+				animate={{ width: "100%" }}
+				transition={{ type: "spring", duration: 6 }}
+			></motion.div>
+			<Image
+				className="grid-row-1 grid-col-1 z-20 max-h-[504px] max-w-[190px] w-full justify-self-center self-center block md:hidden"
+				src="/images/soldier/hizir-kaya-soldier.png"
+				alt="soldier standing still"
+				width={640}
+				height={480}
+			/>
+			<Image
+				className="grid-row-1 grid-col-1 z-20 max-h-[760px] max-w-[100%] w-full self-end pr-[1.8rem] hidden md:block"
+				src="/images/soldier/soldier-1.png"
+				alt="soldier pointing a gun in the far left"
+				width={640}
+				height={480}
+			/>
+		</article>
 	)
 }
 
