@@ -1,12 +1,22 @@
 import Link from "next/link"
-import Image from 'next/image'
+
+import IconItems from "../IconItems"
 
 const Logo = () => {
-  return (
-    <Link href="/" className="w-full ml-4">
-      <Image className="size-8" src="/logo/foska.png" alt="foska logo" width={20} height={20} />
-    </Link>
-  )
+	return (
+		<Link
+			href="/"
+			className="w-full"
+		>
+			<IconItems
+				fillColor="white"
+				type="logo"
+				width="2rem"
+				height="2rem"
+			/>
+		</Link>
+	)
 }
 
 export default Logo
+

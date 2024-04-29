@@ -55,5 +55,37 @@ img {
 	width: 100%;
 	height: auto;
 	object-fit: cover;
+	display: block;
 }
+
+.hero-bg-image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-image: url(/images/soldier/hizir-kaya-0q90Mumo-xE-unsplash-v3.jpg);
+}
+
+.hero-bg-image::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.2);
+	height: 100vh;
+}
+
+/* @media (max-width: 768px) {
+	.hero-bg-image {
+		background-image: url(/images/soldier/hizir-kaya-0q90Mumo-xE-unsplash.jpg);
+	}
+} */
+
+/* @media (min-width: 769px) {
+	.hero-bg-image {
+		background-image: url(/images/soldier/alexander-jawfox-Mu0ExSKTOBs-unsplash.jpg);
+	}
+} */
 
