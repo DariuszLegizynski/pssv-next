@@ -1,43 +1,4 @@
-h1,
-.h1 {
-	@apply text-3xl sm:text-4xl md:text-5xl xl:text-6xl;
-}
-
-h2,
-.h2 {
-	@apply text-2xl sm:text-3xl md:text-4xl xl:text-5xl;
-}
-
-h3,
-.h3 {
-	@apply text-lg sm:text-xl md:text-2xl xl:text-3xl;
-}
-
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-	@apply text-white;
-	font-weight: 600;
-	letter-spacing: 2px;
-}
-
-p,
-.p {
-	@apply text-base sm:text-lg md:text-xl xl:text-2xl;
-}
-
-span {
-	@apply text-sm sm:text-base md:text-lg xl:text-xl;
-}
+@import url('./animations.css');
 
 button {
 	cursor: pointer;
@@ -62,7 +23,7 @@ img {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: center center;
+	background-position: center 0%;
 	background-image: url(/images/soldier/hizir-kaya-0q90Mumo-xE-unsplash-v3.jpg);
 }
 
@@ -76,16 +37,3 @@ img {
 	background: rgba(0, 0, 0, 0.2);
 	height: 100vh;
 }
-
-/* @media (max-width: 768px) {
-	.hero-bg-image {
-		background-image: url(/images/soldier/hizir-kaya-0q90Mumo-xE-unsplash.jpg);
-	}
-} */
-
-/* @media (min-width: 769px) {
-	.hero-bg-image {
-		background-image: url(/images/soldier/alexander-jawfox-Mu0ExSKTOBs-unsplash.jpg);
-	}
-} */
-
