@@ -5,27 +5,24 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-img {
-    display: block;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Times New Roman', serif;
-  margin: 0;
-  padding: 0;
+	font-family: "Times New Roman", serif;
+	margin: 0;
+	padding: 0;
 }
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
 }
+
